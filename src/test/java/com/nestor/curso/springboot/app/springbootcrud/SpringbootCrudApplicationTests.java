@@ -1,4 +1,4 @@
-package com.andres.curso.springboot.app.springbootcrud;
+package com.nestor.curso.springboot.app.springbootcrud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

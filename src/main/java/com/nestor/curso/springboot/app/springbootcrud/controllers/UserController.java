@@ -34,7 +34,7 @@ public class UserController {
         return service.findAll();
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')") //  significa que el método o controlador al que se aplica esta anotación solo puede ser ejecutado por usuarios que tengan el rol de "ADMIN"
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody User user, BindingResult result) {
         if (result.hasFieldErrors()) {
